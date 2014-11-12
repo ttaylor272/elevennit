@@ -1,0 +1,7 @@
+ <article class="post">
+  <%= render 'slug', post: @post %>
+  <% if @post.text? -%>
+    <section class="body"><%= @post.body %></section>
+  <% end -%>
+  <%= render 'actions', post: @post %>
+</article>
